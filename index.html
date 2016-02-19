@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body class="">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">首頁</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        
+
+<br>
+<div ng-app="myApp" class="ng-scope">
+    <!-- ngView:  --><div ng-view="" class="ng-scope"><div class="page-header ng-scope">
+    <h2>Open&nbsp;Data</h2>
+</div>
+<table class="table table-striped table-bordered table-hover ng-scope">
+    <thead>
+        <tr>
+            <th>展覽名稱</th>
+            <th>地點</th>
+            <th>展覽開始時間</th>
+            <th>展覽結束時間</th>
+            <th>展覽類型</th>
+            <th>介紹</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">簡瑞珍衣裳人形偶創作展 </td>
+            <td class="ng-binding">高雄市文化中心-至真堂三館</td>
+            <td class="ng-binding">2016/02/12</td>
+            <td class="ng-binding">2016/02/23</td>
+            <td class="ng-binding">工藝</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2594" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2594" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">簡瑞珍衣裳人形偶創作展 </h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">簡瑞珍將世間人物群像、及純淨的靈魂注入所創作的歷史人形偶作品裡，構築出瑰麗的人形偶世界。題材多源於歷史故事，但創作動力源自於她的生活經歷，亦是對生命意象的捕捉。她把豐富多彩的歷史人物，以變化多端的姿態呈現，人形偶作品維妙維肖並蘊涵了濃烈的文化意涵，簡瑞珍所追求之創作目標，是純樸而空靈的，作品寓結構美學及近乎哲學的意念於現代的材質中。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2594_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2594_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">天影-鄭建寧油畫個展</td>
+            <td class="ng-binding">高雄市文化中心-至真堂二館</td>
+            <td class="ng-binding">2016/02/12</td>
+            <td class="ng-binding">2016/02/23</td>
+            <td class="ng-binding">繪畫--水墨</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2610" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2610" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">天影-鄭建寧油畫個展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">凡地上美好的事，都是從天上形狀和影像反映而來。天上是真實是永恆不變的，在地上的倒影反而是虛的是變化的。人透過平靜中的安息裡，如水面的倒影悠然平靜，就可意會天上實體的榮美，並從中得著天上種種祝福。&lt;br /&gt;
+以自創「油水界面潑墨法」,&amp;nbsp;達油畫肌理的質色澤明亮且有水墨般的雅趣。色彩繽紛,&amp;nbsp;熱情奔放，淋漓盡至，是新春中最美的祝福。每張作品均有創作分享之文字簡述，讓參觀者能意會畫家對藝術熱情與對生命的熱愛。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2610_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2610_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">刀彩寄情–陳瑞瑚油畫個展</td>
+            <td class="ng-binding">高雄市文化中心-至真堂一館</td>
+            <td class="ng-binding">2016/02/12</td>
+            <td class="ng-binding">2016/02/23</td>
+            <td class="ng-binding">繪畫--油畫</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2595" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2595" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">刀彩寄情–陳瑞瑚油畫個展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">有時候藝術的呈現經由情感外物的發現，但也是為了呈顯或詮釋創作者心中的一種內涵，再由內容與形式構成藝術的整體。&lt;br /&gt;
+陳瑞瑚是位純粹以單支畫刀油彩創作的畫家，數十年來從未改變，直到世界大呼節能減碳的今日，因其捨棄以油劑做媒介及洗筆的污染，也算為環保盡了點心力。1957年生於台南縣，現居高雄市。一段在鄉居成長期間，積澱在身心中的鄉情文化人文內涵乃是陳瑞瑚在創作中，能深切表達其懷鄉舊情的藝術本質、清新、自然、溫馨，充滿飽滿光陽的色感，在畫刀油彩的鋪陳下，點綴了生命的悸動也由中傳達了陽光與喜悅的滿足感。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2595_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2595_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">「打開畫匣子－美術在高雄」正心-盧三禮書法展</td>
+            <td class="ng-binding">高雄市文化中心-雅軒</td>
+            <td class="ng-binding">2016/02/17</td>
+            <td class="ng-binding">2016/02/28</td>
+            <td class="ng-binding">書法篆刻</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2601" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2601" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">「打開畫匣子－美術在高雄」正心-盧三禮書法展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 盧三禮自中油退休後開始學習書畫之歷程，曾受教於薛清茂老師、李春祈老師、阿卜極老師、盧福壽老師、王武森老師、蔡獻友老師和佛教福智社文教基金會李循利老師等，以及在南海書畫學會深受各位先進前輩的薰陶，並得高人李吉良先生之鼓勵而持續耕耘於書法藝術。&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 95年10月在一個偶然機會下，盧三禮受姪子的鼓勵參加第一屆太子盃台灣書法比賽獲得第五名。首次參賽能有此成績，讓他信心大增，此後只要有比賽活動，時間上許可就去參加，於96至102年間陸續獲得各種比賽的佳作、入選、優選等獎項。&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 盧三禮認為目前社會道德淪喪，有必要藉此機會，以導正人心為出發點。故本次個展主題題名為「正心」，期盼藉由為人處世的格言，為匡正人心、改善社會風氣做點事、出點力。</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2601_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2601_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">第11屆勝安藝術獎暨第9屆熱愛藝術獎全國青年水墨創作大展</td>
+            <td class="ng-binding">高雄市文化中心-至上館(原第二文物館)</td>
+            <td class="ng-binding">2016/02/19</td>
+            <td class="ng-binding">2016/03/01</td>
+            <td class="ng-binding">繪畫--水墨</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2603" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2603" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">第11屆勝安藝術獎暨第9屆熱愛藝術獎全國青年水墨創作大展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">「勝安藝術獎」全國青年水墨創作大賽，為台灣唯一長期專注推動高中職學生水墨創作的公益大獎，於2005年由楊麒麟、盛連金夫婦為延續楊勝安老師教育英才未酬之壯志所創辦，並設「熱愛藝術獎」獎勵身障、清寒等學子，在臺灣藝術大學書畫系協助下，至今鼓勵超過千位學子。此次展覽精選得獎作品40餘幅，透過多元青年水墨作品與各界交流。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2603_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2603_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">藝漾派對-高雄市美術推廣協進會會員聯展</td>
+            <td class="ng-binding">高雄市文化中心-至美軒</td>
+            <td class="ng-binding">2016/02/19</td>
+            <td class="ng-binding">2016/03/01</td>
+            <td class="ng-binding">繪畫--綜合</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2607" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2607" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">藝漾派對-高雄市美術推廣協進會會員聯展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">「藝術是自然的模仿」是詮釋真善美的藝術，包含傳統到現代、抽象與多媒體共存的藝術，含有審美價值的活動產物，表達出創作者的思想與身心情感，讓人欣賞感動共感、共鳴，進而產生「生活即藝術」「 藝術即生活」。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2607_1.jpg" c="" class="img-thumbnail">
+                                <img src="" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">施昆洋個展  認識水－認識靈魂的曲線  </td>
+            <td class="ng-binding">高雄市文化中心-至高館(原第一文物館)</td>
+            <td class="ng-binding">2016/02/19</td>
+            <td class="ng-binding">2016/03/01</td>
+            <td class="ng-binding">綜合展</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2602" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2602" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">施昆洋個展  認識水－認識靈魂的曲線  </h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">水處於一種和火精神完全相悖的性質，在一方　”死亡　”後，這種性質立刻蓬勃的展開．死亡必非結束，而是循環的開始．面對離奇之造化，他如何能夠輕描淡寫地講述自己的憂傷？它終將為綠色所覆蓋！水阿，它唯一且之”種子”，而為萬物之欲；它讓一切種子埋藏其中，因而也讓一切種子都得以如願已償：即生了又死，死了又生，而沒完沒了；生生滅滅，日子無法加以阻止，生離死別，星辰變的姿態萬千．一切關係就在最平常的狀態下進行著最冠冕的儀式．（文．施昆洋）&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2602_1.jpg" c="" class="img-thumbnail">
+                                <img src="" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">油(遊)山玩水、北中南畫家聯展</td>
+            <td class="ng-binding">高雄市文化中心-至真堂三館</td>
+            <td class="ng-binding">2016/02/26</td>
+            <td class="ng-binding">2016/03/08</td>
+            <td class="ng-binding">繪畫--油畫</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2599" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2599" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">油(遊)山玩水、北中南畫家聯展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">一群熱愛戶外寫生的?友，因寫生活動而讓各地?友結?，有志一同相約舉辦聯展，希望能讓更多人看到我們的努力和堅持，此次展覽有油?及水彩的寫生作品，以寶島台灣為對象，期望透過彩筆讓大家看到台灣的美，也希望各界人士不吝蒞臨參觀指正。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2599_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2599_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">2016聯邦藝術巡迴展</td>
+            <td class="ng-binding">高雄市文化中心-至真堂一館</td>
+            <td class="ng-binding">2016/02/26</td>
+            <td class="ng-binding">2016/03/08</td>
+            <td class="ng-binding">繪畫--油畫</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2611" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2611" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">2016聯邦藝術巡迴展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">本次展出內容包含聯邦藝術比賽之「第13屆聯邦美術印象大獎」與「第18屆聯邦美術新人獎」得獎作品，參觀民眾可同時欣賞到印象及寫實兩種不同油畫風格之參賽優秀作品。本次得獎者分別為「第13屆聯邦美術印象大獎」首獎-林照鈞；優選-王宏印、吳尚武；入選-賴易聰、宋適生；「第18屆聯邦美術新人獎」首獎-黃蕙儀；優選-林子超、李明剛；入選-施金宏、李政穎。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2611_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2611_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">「永遠的尖山」2016簡天佑 南島之美作品展</td>
+            <td class="ng-binding">高雄市文化中心-至真堂二館</td>
+            <td class="ng-binding">2016/02/26</td>
+            <td class="ng-binding">2016/03/08</td>
+            <td class="ng-binding">繪畫--綜合</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2609" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2609" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">「永遠的尖山」2016簡天佑 南島之美作品展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">「 永遠的尖山」是一場漫長的藝術馬拉松，從1984年寫生的「墾丁大尖山」至今已經整整31年，這是一段孤獨而沒有掌聲的歲月，但我卻甘之如飴而無怨無悔。墾丁大尖石山是南台灣的地標。在南島寫生苦樂參半，苦的是夏季的酷暑與冬季強勁的落山風，樂的是完成作品的成就感。每個人的內心都有一座無形的尖山，是夢想，或賴以奮鬥的目標。我用畫作成就夢想，也見證生命的旅程。</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2609_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2609_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">「打開畫匣子－美術在高雄」彩繪人生—曾秋香西畫展</td>
+            <td class="ng-binding">高雄市文化中心-雅軒</td>
+            <td class="ng-binding">2016/03/02</td>
+            <td class="ng-binding">2016/03/13</td>
+            <td class="ng-binding">繪畫--油畫</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2598" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2598" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">「打開畫匣子－美術在高雄」彩繪人生—曾秋香西畫展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">&amp;nbsp;&amp;nbsp;&amp;nbsp; 曾秋香生於民國30年做苦工的勞動家庭，姊妹中只有她讀到高中畢業。民國52年經親友的介紹，嫁作軍人婦，自此就當起全職的家庭主婦。因先生大部分時間都在軍營，曾秋香一肩扛起家庭重任，維護家計及照顧孩子，直到民國79年先生從職場退休，孩子們陸續完成學業，結婚生子，她才有時間參加銀髮族的長春保健協會活動，並跟隨溫瑞和老師學習油畫，學習如何構圖、用筆、調色、上色。保健協會解散後，她轉移到老師的家，繼續上課。&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 曾秋香跟隨溫瑞和老師已有十六年，也是雙彩畫會最資深的會員。在柴、米、油、鹽、醬、醋、茶的主婦生活壓力中，曾秋香找到了喘息的良方，常常作畫到忘我的境界，讓她有不虛此生的感覺，也讓她能在平凡的人生中，留給孩子們一些值得記憶的作品。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2598_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2598_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">綻放藝彩-高雄市雙彩美術協會會員聯展</td>
+            <td class="ng-binding">高雄市文化中心-至美軒</td>
+            <td class="ng-binding">2016/03/04</td>
+            <td class="ng-binding">2016/03/15</td>
+            <td class="ng-binding">繪畫--綜合</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2613" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2613" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">綻放藝彩-高雄市雙彩美術協會會員聯展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">&lt;br /&gt;
+雙彩美術協會成立於民國九十七年，一○三年正式立案，成員包括社會各階層人員，我們為興趣而作畫，一起寫生一起作畫，像個大家庭般，彼此觀摩、學習、互相切磋，精進畫藝。&lt;br /&gt;
+&lt;br /&gt;
+我們的創作以寫實為主，把所看到景物重新構圖，做出虛實、層次，將思緒與情感傳達於觀賞者，經由畫作的輝映，希望能激起觀賞者的共鳴，以及對藝術創作的支持。觀者可以看見每位藝術創作者多年執著的努力軌跡，也期盼每位會員在藝術生涯持續綻放藝彩。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2613_1.jpg" c="" class="img-thumbnail">
+                                <img src="" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">05年高雄市港都藝術交流協會春季會員聯展</td>
+            <td class="ng-binding">高雄市文化中心-至上館(原第二文物館)</td>
+            <td class="ng-binding">2016/03/04</td>
+            <td class="ng-binding">2016/03/15</td>
+            <td class="ng-binding">繪畫--綜合</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2604" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2604" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">05年高雄市港都藝術交流協會春季會員聯展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">本協會將展出藝術家們約65幅作品，內容精湛多元。含概油畫、水彩靜物、風景、人像寫實與曼陀羅藝術創作。將多元藝術作品透過視覺當作語言來傳達藝術家想表達之意念。特別是曼陀羅藝術更是獨特性心靈創作，創作者以「心」作畫，從「圓」開始，揮灑出瑰麗豐富的心靈空間。&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2604_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2604_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">仁心－邱于誠 當代水墨創作展</td>
+            <td class="ng-binding">高雄市文化中心-至高館(原第一文物館)</td>
+            <td class="ng-binding">2016/03/04</td>
+            <td class="ng-binding">2016/03/15</td>
+            <td class="ng-binding">繪畫--水墨</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2628" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2628" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">仁心－邱于誠 當代水墨創作展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">&lt;span style="font-size: 12px"&gt;&lt;span style="font-family: 新細明體; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-TW; mso-bidi-language: AR-SA"&gt;&lt;font color="#000000"&gt;醫者仁心，有著中醫家學淵源的藝術家邱于誠，以當代水墨的角度去詮釋醫者懸壺濟世的核心精神─仁心、利生，並於此次展覽中與藝文愛好者分享近期的創作。蘊藏在世代薪傳中醫傳統文化下的是仁心─推眾生心為己心，愛人如己之心，也是佛家常說的「無緣大慈，同體大悲」，故以「仁心」為展出題名。本次承展約五十件作品，有水墨畫作，也有立體陶作，希望藉著這次的展覽，向博大精深的中醫國粹致敬，也期勉大家－仁心、利生－本著愛人如己之心，去做有利於眾生之事，又何愁社會不祥和呢？誠摯邀請愛好藝文的好朋友們參與這場藝術饗宴。&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2628_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2628_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">東方設計學院創校50週年藝術設計百人巡迴展</td>
+            <td class="ng-binding">高雄市文化中心-至真堂二館</td>
+            <td class="ng-binding">2016/03/11</td>
+            <td class="ng-binding">2016/03/22</td>
+            <td class="ng-binding">綜合展</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2621" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2621" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">東方設計學院創校50週年藝術設計百人巡迴展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">&amp;nbsp;由東方設計學院校友會主辦「2016東方50週年校友百人展」邀請近百位歷屆校友參展，堪稱集創校50年來之大成。受邀校友均為藝術與設計方面成績卓著的人物，參展作品計有藝術創作、平面設計、建築與室內設計三大類，創作質精，內容多元、意韻豐富，呈現東方設計學院創校五十年來的豐碩成果。&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 現任校友會長柯男烈先生為知名企業董事長，為蘊釀二○一六東方創校五十週年慶暨校友回娘家活動，由校友會籌劃舉辦百人藝術創作巡迴展，鼓勵學校老師、校友繼續研究及創作，預訂於三月十一日到三月廿二日於高雄文化中心至真一館、至真二館展出，三月廿四日至四月十三日回東方校園展出，四月十六日至五月十五日分別於屏東美術館展與岡山文化中心展出，屆時歡迎各界蒞臨指教。。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2621_1.jpg" c="" class="img-thumbnail">
+                                <img src="" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">鏡頭裡~另眼看世界暨高雄影展</td>
+            <td class="ng-binding">高雄市文化中心-至真堂三館</td>
+            <td class="ng-binding">2016/03/11</td>
+            <td class="ng-binding">2016/03/22</td>
+            <td class="ng-binding">攝影</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2590" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2590" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">鏡頭裡~另眼看世界暨高雄影展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">攝影是「藝術」與「技術」的結晶，透過「心靈」與「鏡頭」實物，孕育出剎那間的永恒記錄，落實世界共同的語言的心靈妙境，也是現代人用來寫日記最便捷&lt;br /&gt;
+的方式。鏡頭裡，另眼看世界，透過鏡頭將自我生命帶到一個不可能參與的領域，完全的不同的人生經歷，這裡有生命的故事，土地的故事，歷史的故事，等你來發掘。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2590_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2590_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">東方設計學院創校50週年藝術設計百人巡迴展</td>
+            <td class="ng-binding">高雄市文化中心-至真堂一館</td>
+            <td class="ng-binding">2016/03/11</td>
+            <td class="ng-binding">2016/03/22</td>
+            <td class="ng-binding">綜合展</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2620" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2620" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">東方設計學院創校50週年藝術設計百人巡迴展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">&amp;nbsp;&amp;nbsp;&amp;nbsp; 由東方設計學院校友會主辦「2016東方50週年校友百人展」邀請近百位歷屆校友參展，堪稱集創校50年來之大成。受邀校友均為藝術與設計方面成績卓著的人物，參展作品計有藝術創作、平面設計、建築與室內設計三大類，創作質精，內容多元、意韻豐富，呈現東方設計學院創校五十年來的豐碩成果。&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 現任校友會長柯男烈先生為知名企業董事長，為蘊釀二○一六東方創校五十週年慶暨校友回娘家活動，由校友會籌劃舉辦百人藝術創作巡迴展，鼓勵學校老師、校友繼續研究及創作，預訂於三月十一日到三月廿二日於高雄文化中心至真一館、至真二館展出，三月廿四日至四月十三日回東方校園展出，四月十六日至五月十五日分別於屏東美術館展與岡山文化中心展出，屆時歡迎各界蒞臨指教。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2620_1.jpg" c="" class="img-thumbnail">
+                                <img src="" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">「打開畫匣子－美術在高雄」陳萬宗九十書法習作展</td>
+            <td class="ng-binding">高雄市文化中心-雅軒</td>
+            <td class="ng-binding">2016/03/16</td>
+            <td class="ng-binding">2016/03/27</td>
+            <td class="ng-binding">書法篆刻</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2612" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2612" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">「打開畫匣子－美術在高雄」陳萬宗九十書法習作展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 陳萬宗出生於彰化縣鹿港鎮，擔任公職超過45年，1992年退休後，1998年開始學習書法於長青學苑及彰化師大老人大學書法班至今。臨摩名人楷、行、隸、篆、草、日文書道等，勤於習練，期有成長。&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 陳萬宗健身運動球齡已達69年，秉持活到老學到老的精神，運用並把握每一天美好的時刻。他認為養心在靜，勤練書法；養身在動，勤練桌球，如此動靜並行，才能相輔相成、相得益彰。他經常參加書法及桌球活動，成績不俗。曾獲得2006年高雄市中華書道學會第二屆全國書法比賽長青組金獎，桌球比賽也多次獲得個人組冠軍，2012年被選為高雄市第38屆模範父親。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2612_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2612_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">「不待於風」邱于欣個展</td>
+            <td class="ng-binding">高雄市文化中心-至高館(原第一文物館)</td>
+            <td class="ng-binding">2016/03/18</td>
+            <td class="ng-binding">2016/03/29</td>
+            <td class="ng-binding">繪畫--油畫</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2614" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2614" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">「不待於風」邱于欣個展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">「不待於風」這個展覽是畫家邱于欣藉由《莊子》〈逍遙遊〉獨特的人生態度，層層對照畫家本人的人生歷程與創作，作深刻的省思。創作歷程分為「自困」、「未樹」、「待風」與「無待」四個階段。鑒於人生中的苦痛來自於人們心智的茫然，情緒慾望的多變，人類中心價值觀的虛妄。因此畫家認為我們應該回歸到老莊思想中的「宇宙和諧觀」，萬物循環運動生生不息，在變化中不斷的達到平衡、和諧與規律。期盼自己從莊子的圓融智慧中，習得「在方內中遊於方外」的自由與活力，一方面保有優游自在的心，另一方面擁有自由出入人間世的心境。</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2614_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2614_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">南風藝事－南風油畫學會會員聯展</td>
+            <td class="ng-binding">高雄市文化中心-至美軒</td>
+            <td class="ng-binding">2016/03/18</td>
+            <td class="ng-binding">2016/03/29</td>
+            <td class="ng-binding">繪畫--油畫</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2615" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2615" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">南風藝事－南風油畫學會會員聯展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">南風油畫學會成立於88年，是由一群熱愛繪畫藝術的同好匯聚組成。創作的面相寬廣，風格各異其趣。成員們用色彩、線條、紀錄了生活、意象、概念等，在畫布上創造了真誠的空間，期待您走進來分享交流。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2615_1.jpg" c="" class="img-thumbnail">
+                                <img src="" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">彩色大地-小木馬藝術協會油畫聯展</td>
+            <td class="ng-binding">高雄市文化中心-至上館(原第二文物館)</td>
+            <td class="ng-binding">2016/03/18</td>
+            <td class="ng-binding">2016/03/29</td>
+            <td class="ng-binding">繪畫--油畫</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2624" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2624" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">彩色大地-小木馬藝術協會油畫聯展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">小木馬藝術協會是蘋果日報「我和你不一樣」專訪人物蔡政志所創辦。他打造私立「蔡政志美術館」。他的畫作「刺桐」被高美館永久典藏。小木馬協會熱愛繪畫，積極推廣「生活即藝術」的理念，培育優秀的藝術人才，也讓繪畫為平淡的生活增添繽紛的色彩，創造美麗的人生。此次聯展，是協會師生將感動，揮灑於畫布，畫成永恆珍貴回憶。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2624_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2624_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">晶痕蛻變 王燕琨的晶彩世界</td>
+            <td class="ng-binding">高雄市文化中心-至真堂三館</td>
+            <td class="ng-binding">2016/03/25</td>
+            <td class="ng-binding">2016/04/05</td>
+            <td class="ng-binding">工藝</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2616" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2616" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">晶痕蛻變 王燕琨的晶彩世界</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">&lt;p class="MsoNormal" style="margin: 0cm 0cm 0pt;"&gt;&lt;span style="font-size: 14px;"&gt;&lt;span style="font-family: &amp;quot;新細明體&amp;quot;,serif; mso-ascii-theme-font: minor-fareast; mso-fareast-theme-font: minor-fareast; mso-hansi-theme-font: minor-fareast;"&gt;&lt;font color="#000000"&gt;&lt;span lang="EN-US"&gt;王燕琨，個性堅毅開朗勇於嘗試，熱愛旅行 ，潛水、騎機車環島、海洋獨木舟，攀岩樣樣來，興趣廣泛。八十三年開始自行創作，嘗試過多種藝術創作，尤其雕刻藝術方面更為擅長，技術純熟，作品精緻多樣化，充滿情感，現在專心投入壓克力晶雕。&lt;br /&gt;
+本此展覽將對於自然界的觀察轉化成晶雕創作題材，並以人生經歷、體悟加以用心精心雕琢，雕琢的刀痕由淺入深蛻變成美麗精緻的獨特作品，一刀刀刻畫出的痕跡，猶如述說著生命中一次次的傷痕。刻在壓克力材質上，雕琢出生活的起、伏、轉、折，即便生命不完美，亦能綻放耀眼的光彩。&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp;&lt;/p&gt;
+</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2616_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2616_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">「打開畫匣子－美術在高雄」不踏紅塵看牡丹-李秀蓮個展</td>
+            <td class="ng-binding">高雄市文化中心-雅軒</td>
+            <td class="ng-binding">2016/03/30</td>
+            <td class="ng-binding">2016/04/10</td>
+            <td class="ng-binding">繪畫--綜合</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2608" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2608" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">「打開畫匣子－美術在高雄」不踏紅塵看牡丹-李秀蓮個展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;大自然的美妙，使李秀蓮發起一股執筆學畫的勇氣，開始了學習國畫、素描、水彩、油畫之路。承蒙老師崔繩運指導，並先後受教於宓雄、薛清茂、胡念祖、顏逢郎、李春祈多位名師，涉獵多元繪畫技巧，吸取西方豔麗色彩觀念並融入她的作品中。&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 李秀蓮的山水、花鳥、人像、動物、靜物，有寫實有寫意，尤其擅長牡丹花。「牡丹」素稱花中之王，富貴吉祥之象徵，為了解牡丹的生態及特徵，李秀蓮也去山東荷澤參觀，那片牡丹田一望無際，花大如斗，色多嬌美，將田裡的牡丹花移到紙張畫布上，呈現出不同的風格，浪漫神彩，濃豔嬌美，更讓人賞心悅目。</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2608_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2608_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">南陵書會第六屆會員聯展</td>
+            <td class="ng-binding">高雄市文化中心-至高館(原第一文物館)</td>
+            <td class="ng-binding">2016/04/01</td>
+            <td class="ng-binding">2016/04/12</td>
+            <td class="ng-binding">書法篆刻</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2618" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2618" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">南陵書會第六屆會員聯展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">本會成立於民國八十七年，創立之宗旨，義在敦品勵學，宏揚書法藝術。會員來自南台灣社會各階層，其年歲有老少，書齡有淺深，然而對書法的熱愛並無差異。&lt;br /&gt;
+本會擬定每隔二年舉辦會員聯展，先後於國立台南美學館，屏東縣文化中心，高雄市立文化中心等展出，深獲好評。民國一?五年四月一日至十二日，本會在次於高雄文化局至高館舉辦第六屆會員聯展，期盼斯道同好及前輩方家您的蒞臨指導。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2618_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2618_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">台灣風土情 － 吳澐泯 水彩寫生個展</td>
+            <td class="ng-binding">高雄市文化中心-至上館(原第二文物館)</td>
+            <td class="ng-binding">2016/04/01</td>
+            <td class="ng-binding">2016/04/12</td>
+            <td class="ng-binding">繪畫--水彩</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2629" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2629" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">台灣風土情 － 吳澐泯 水彩寫生個展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">家庭主婦也可以當畫家，小時候就很喜愛畫畫，所以一直朝此目標前進，2005年有緣受教於李太豐老師才開啟繪畫之路，2009年開始戶外寫生，幸運的2013年辦了首次個展，之後加入多個畫會，跟著畫友參加旅遊寫生，視野更開闊，平時三、五好友一起畫靜物、人物練習，非常珍惜與感恩得以讓這次的二次個展，作品更豐富多元。有感於潘枝鴻、蔡水林老師相繼辭世！不能忘記他兩留下的美好典範！『努力畫』為台灣的風景、土地畫下永恆的記憶。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2629_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2629_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">豐華再現-2016王信豐紀念展</td>
+            <td class="ng-binding">高雄市文化中心-至真堂二館</td>
+            <td class="ng-binding">2016/03/25</td>
+            <td class="ng-binding">2016/04/19</td>
+            <td class="ng-binding">繪畫--水墨</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2622" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2622" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">豐華再現-2016王信豐紀念展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">藝術是服務社會大眾心靈的最有效途徑，高雄有幸能有一位如此熱愛家鄉的藝術家不斷的服務著市民之心靈；然而天忌英才，上蒼僅給他63年的時光，對他而言，或許有些短暫，但他於有限的歲月中，創造了無限的彩色世界，他留給社會的是無價的藝術資材；此次展覽，是自1973年至2015年間，畫彩豐碩的成果，記錄的是他的彩畫人生，他的作品有極強的衝振力，深深的打動我們的心靈；他是都市叢林中的隱士，曾走過繁華、喧嚷，但終究他選擇了寂靜、荒涼與冷落的景緻，記錄著社會的滄桑，背負著以圖像喚醒世人的心志。如今他已遠離我們，尋覓他心境中的烏托邦；而他的精神與人格卻常留人間，如詠嘆調在我們心中永遠的盤旋。</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2622_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2622_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">豐華再現-2016王信豐紀念展</td>
+            <td class="ng-binding">高雄市文化中心-至真堂一館</td>
+            <td class="ng-binding">2016/03/25</td>
+            <td class="ng-binding">2016/04/19</td>
+            <td class="ng-binding">繪畫--水墨</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2623" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2623" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">豐華再現-2016王信豐紀念展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">藝術是服務社會大眾心靈的最有效途徑，高雄有幸能有一位如此熱愛家鄉的藝術家不斷的服務著市民之心靈；然而天忌英才，上蒼僅給他63年的時光，對他而言，或許有些短暫，但他於有限的歲月中，創造了無限的彩色世界，他留給社會的是無價的藝術資材；此次展覽，是自1973年至2015年間，畫彩豐碩的成果，記錄的是他的彩畫人生，他的作品有極強的衝振力，深深的打動我們的心靈；他是都市叢林中的隱士，曾走過繁華、喧嚷，但終究他選擇了寂靜、荒涼與冷落的景緻，記錄著社會的滄桑，背負著以圖像喚醒世人的心志。如今他已遠離我們，尋覓他心境中的烏托邦；而他的精神與人格卻常留人間，如詠嘆調在我們心中永遠的盤旋。</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2623_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2623_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">「打開畫匣子－美術在高雄」飛向彩虹-周民秋個展</td>
+            <td class="ng-binding">高雄市文化中心-雅軒</td>
+            <td class="ng-binding">2016/04/13</td>
+            <td class="ng-binding">2016/04/24</td>
+            <td class="ng-binding">繪畫--水墨</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2626" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2626" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">「打開畫匣子－美術在高雄」飛向彩虹-周民秋個展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 周民秋幼時常看見父親為眷村中左鄰右舍的新嫁娘畫被面與枕頭套，所以對繪畫甚為喜愛。婚後成為家庭主婦，忙碌了廿餘年，因孩子們離巢後生活空虛，就到劉子仁老師處習墨荷，2004年開始向吳榮珍老師習國畫，又隨黃榮德老師習現代水墨，陳界民老師習花卉，三年前則向薛清茂老師學習彩墨山水。&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 自2008年後，周民秋陸續加入高雄市嶺南畫會、高雄市南海書畫學會、高雄市國際文化藝術協會、高雄市中國書畫協會、懷古門美術研究學會，並參加學會聯展、普光美展、兩岸交流展、佛光緣美展。她認為應師法自然，觀察花卉的長相、葉子的排列交錯、山川流水的走向及雲霧的變幻等自然界的現象。&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 繪畫豐富了周民秋平淡的生活，讓她有飛上雲端，站在彩虹之上，天地任我遨遊的感覺，而此次的展出更在她人生的旅途抹上了絢麗的色彩，增添了美麗的回憶。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2626_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2626_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">「打開畫匣子－美術在高雄」夢彩心繪-許孟才油畫創作個展</td>
+            <td class="ng-binding">高雄市文化中心-雅軒</td>
+            <td class="ng-binding">2016/04/27</td>
+            <td class="ng-binding">2016/05/08</td>
+            <td class="ng-binding">繪畫--油畫</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2631" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2631" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">「打開畫匣子－美術在高雄」夢彩心繪-許孟才油畫創作個展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">&amp;nbsp;&amp;nbsp; 許孟才生於澎湖，國立台灣藝專 (現台灣藝術大學) 畢業，現為西瀛畫會理事。在學期間就曾在馬公鎮公所首辦四人&amp;ldquo;美術設計展&amp;rdquo;，之後仍執著於創作和發表個人畫展，並於1969年獲步兵學校繪畫比賽西畫組第一名、1972年獲日本 ASAHI攝影雜誌年度優等獎、1978年獲地球出版社第一屆攝影優等獎、1988年創立透明畫會、1990年起多次參與國內外聯展及舉辦個人畫展。&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 許孟才認為繪畫藝術係心靈自由自在的表現，不拘泥形式、時空和思維邏輯，因此他習慣以虛擬與真實事物並列方式傳達視覺效果和心靈的感受，在畫作上則會隨著不同時期而有不同的技法和表達方式。如近期的作品，作者故意捨棄傳統透視、投影等原則，而以平塗、線條和色塊為主軸，以縱向切割組合畫面，呈現半抽象或抽象方式，達到自我的思維境界。</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2631_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2631_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">台灣港灣風?-黃運祥厚工水彩 全國巡迴展高雄展</td>
+            <td class="ng-binding">高雄市文化中心-至真堂三館</td>
+            <td class="ng-binding">2016/05/06</td>
+            <td class="ng-binding">2016/05/17</td>
+            <td class="ng-binding">繪畫--水彩</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2625" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2625" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">台灣港灣風?-黃運祥厚工水彩 全國巡迴展高雄展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">「黃運祥厚工水彩」具有西方油畫的厚實及東方水墨意境，創造厚實肌理又渲染迷離之水彩新視界。近年來阿祥走訪台灣及離島海岸線，完成百餘幅全開與雙全開大幅畫作，其間有令人讚嘆的寶島美景，亦有令人扼腕的人為破壞，遂忠實以畫筆記錄之。這些作品已獲獎百餘次，其創作理念與繪畫藝術獲極佳好評與迴響，值得親臨現場欣賞。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2625_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2625_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">「打開畫匣子－美術在高雄」圓夢－蘇玉雲水墨畫展</td>
+            <td class="ng-binding">高雄市文化中心-雅軒</td>
+            <td class="ng-binding">2016/05/11</td>
+            <td class="ng-binding">2016/05/22</td>
+            <td class="ng-binding">繪畫--水墨</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2630" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2630" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">「打開畫匣子－美術在高雄」圓夢－蘇玉雲水墨畫展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">&lt;br /&gt;
+&amp;nbsp;&amp;nbsp; 蘇玉雲出生在台灣嘉義布袋的魚塭之鄉，小學畢業後學習洋裁縫紉，工作數十載，由基層雜事到設計打版裁縫，再晉升為全能的裁縫師。退休後於2003年進入長青學苑，開始接觸水墨繪畫，之後加入嶺南藝術學會，並多次參與長青學苑及嶺南藝術學會的聯展。&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 蘇玉雲多方接觸學習中西繪畫技法，在水墨－嶺南吳榮珍老師，水彩－陳淑貞老師，花鳥－蕭屏妮老師的指導下，從臨摩老師的作品到找到自己的技法風格，除了善用以前洋裁繪圖的經驗，也能觀察體現自身的生活題材，找到合適的構思，下筆雖像是隨手塗鴉卻是生命精華的呈現。</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2630_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2630_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">戀戀粉彩八人聯展</td>
+            <td class="ng-binding">高雄市文化中心-至真堂三館</td>
+            <td class="ng-binding">2016/06/17</td>
+            <td class="ng-binding">2016/06/28</td>
+            <td class="ng-binding">繪畫--壓克力</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2632" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2632" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">戀戀粉彩八人聯展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">八位業餘繪畫者，基於對粉彩藝術的熱愛，成為高雄市國際粉彩協會創始會員，他們有上班族、兒童繪畫老師、家庭主婦；在各自繁忙緊湊的生活之餘，將他們的生活小點滴，閒暇時所思所見，和旅行中的感動，藉由五彩繽紛的粉彩筆，將心靈的觸動揮灑於畫紙上。經過幾年的學習累進，成就了此次的戀戀粉彩八人聯展。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2632_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2632_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">「打開畫匣子－美術在高雄」秋之華－周肇秋國畫花鳥展</td>
+            <td class="ng-binding">高雄市文化中心-雅軒</td>
+            <td class="ng-binding">2016/06/22</td>
+            <td class="ng-binding">2016/07/03</td>
+            <td class="ng-binding">繪畫--水墨</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2627" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2627" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">「打開畫匣子－美術在高雄」秋之華－周肇秋國畫花鳥展</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 周肇秋出生於大陸雲南昆明市，幼時即喜愛畫圖、歌唱，稍長進入台東師範，因學業繁忙，雖有美術課，卻未能專精，引為憾事。畢業就職後，家庭、教職加上暑期進修等，更無暇發揮年少時之所愛。&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 在39年的教學生涯中，周肇秋最引以為傲的是1986年獲教育部頒科學教師乙等獎，1989年獲頒高雄市特殊優良教師師鐸獎。2002年退休後，周肇秋開始向劉欲啟先生修習書法、國畫、作詩、落款、用印等，並自2003年起開始參展，2004年加入一心畫會，2011年則進入長青學苑國畫花鳥班，受教於蕭屏妮女士，2015年加入高雄市國際文化藝術協會成為會員。&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp; 周肇秋專攻花鳥，在調色、筆觸的拿捏、水分的控制、運筆的快慢、強弱、構圖等方面頗有心得，本次展出是她的首次個展，期望各位先進、朋友能給予指教。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2627_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2627_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' --><tr ng-repeat="year in years | orderBy:'EXEDATE'" class="ng-scope">
+            <td class="ng-binding">「打開畫匣子－美術在高雄」龔一舫的瓠藝天地</td>
+            <td class="ng-binding">高雄市文化中心-雅軒</td>
+            <td class="ng-binding">2016/07/06</td>
+            <td class="ng-binding">2016/07/17</td>
+            <td class="ng-binding">工藝</td>
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2619" data-whatever="@mdo">展開介紹</button>
+                <div class="modal fade" id="2619" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title ng-binding" id="exampleModalLabel">「打開畫匣子－美術在高雄」龔一舫的瓠藝天地</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="ng-binding">&lt;br /&gt;
+&lt;br /&gt;
+龔一舫，高雄縣林園鄉人，現居鳳山市，幼年成長於鄉下，對於葫蘆情有獨鍾。1976年從事繩結編織之研究與教學推廣，1981年投入葫蘆之雕刻，除自種葫蘆、品種之收集，素材防腐及技法之創作運用外，並從事傳承教學，研究傳統瓠雕技法，不斷創新，如：烙燒、墨分五色法、匏塑、勒紮法及金箔、鑲嵌等技法之運用，作品曾於屏東縣、高雄縣、彰化縣、澎湖縣、台中縣、花蓮縣、桃園縣、基隆市、新竹縣、台中市、宜蘭縣文化中心巡迴展出，並曾受邀至新加坡、澳洲、美國展覽；他的作品曾多次獲獎，2013、2014年更分別獲得海峽兩岸中華精品工藝獎之最佳技藝獎及最佳創意獎、銀獎。&lt;br /&gt;
+&lt;br /&gt;
+龔一舫對傳統藝術保存一向不遺餘力，以無私的精神，將瓠雕技法傳予藝術愛好者。他曾經在各縣立文化中心、高雄育幼院及各中小學教學，更推廣至外縣市，到南投手工藝研究所、苗栗造橋龍昇社區的葫蘆特色創作營造。配合國內各單位於大型活動中展覽瓠雕作品和現場示範教學，每年暑期並配合各社團作暑期學生活動教學；他也在高雄縣杉林鄉新庄國小成立全國首座葫蘆雕刻藝術館，配合社區總體營造，教導村裡學員從種植、雕刻葫蘆到美食烹調，共築一個葫蘆藝術村。龔一舫也將作品集結成冊，出版瓠藝教學專書及拍攝錄影帶，使推廣方式更為多樣化，藉此吸引更多人對此一藝術的關注與興趣，讓大眾感受葫蘆藝術之美。&lt;br /&gt;
+&amp;nbsp;</p>
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2619_1.jpg" c="" class="img-thumbnail">
+                                <img src="http://opendata.khcc.gov.tw/upload/art_exhibit/2619_2.jpg" c="" class="img-thumbnail">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr><!-- end ngRepeat: year in years | orderBy:'EXEDATE' -->
+
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+</table>
+
+</div>
+</div>
+<hr>
+        <footer>
+        </footer>
+    </div>
+    <script src="/bundles/jquery?v=LCTUWYjF9I-Sw3l0P8Zn6_b6478OuizeBkjnoe30Tcc1"></script>
+
+    <script src="/bundles/bootstrap?v=-ktyuuYVm8reiCqek-REkH9kFQQZ53F1Ay-TXz9RIew1"></script>
+
+    
+    <script src="/bundles/angularjs?v=mPuFxZ0tKN6v9PtXQhczHEtLwPSQzPwvJeG-EqFsihE1"></script>
+
+<script src="/bundles/jqueryui?v=rlO9zd886tSqAlVL3uec1FHyo715-me1pPCbDEgnp6E1"></script>
+
+<script src="/bundles/c3js?v=5wFSAqsZkzTUh8k0x_OqIbJsSyUa785udEM9GEkkKY81"></script>
+
+<script src="/scripts/amicustomers/index/app.js"></script>
+
+<script src="/scripts/amicustomers/index/controllers.js"></script>
+
+
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Chrome","requestId":"5e6dbd8cf180490f9cb83ddb6cccb3cc"}
+</script>
+<script type="text/javascript" src="http://localhost:3149/30353693bcef41afac4a967a30f1c358/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+
+
+</body>
+</html>
